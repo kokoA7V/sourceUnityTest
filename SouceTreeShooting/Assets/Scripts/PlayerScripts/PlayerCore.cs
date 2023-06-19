@@ -4,7 +4,7 @@ using UnityEngine;
 
 namespace Player
 {
-    public class PlayerAttack : MonoBehaviour
+    public class PlayerCore : MonoBehaviour
     {
         // Start is called before the first frame update
         void Start()

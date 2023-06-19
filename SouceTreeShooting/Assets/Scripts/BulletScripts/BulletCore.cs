@@ -2,9 +2,9 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-namespace Player
+namespace Bullet
 {
-    public class PlayerAttack : MonoBehaviour
+    public class BulletCore : MonoBehaviour
     {
         // Start is called before the first frame update
         void Start()
