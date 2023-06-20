@@ -4,5 +4,6 @@ using UnityEngine;
 
 public interface IHitInfo
 {
-   
+    int Health { get; }
+    void TakeDamage(int value);
 }

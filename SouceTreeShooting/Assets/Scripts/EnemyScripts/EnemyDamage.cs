@@ -1,21 +1,26 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
+using Enemy;
 
-namespace Enemy
+public class EnemyDamage : MonoBehaviour, IHitInfo
 {
-    public class EnemyDamage : MonoBehaviour
+    public int Health => _health;
+
+    private int _health;
+
+    void Start()
     {
-        // Start is called before the first frame update
-        void Start()
+        EnemyCore enemy = GetComponent<EnemyCore>();
+        _health = enemy.maxHp;
+    }
+
+    public void TakeDamage(int value)
+    {
+        _health -= value;
+        if (_health <= 0)
         {
-
-        }
-
-        // Update is called once per frame
-        void Update()
-        {
-
+            // Health‚ª0‚É‚È‚Á‚½ê‡‚Ìˆ—
+            Debug.Log("EnemyKill");
+            Destroy(gameObject);
         }
     }
 }

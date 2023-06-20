@@ -1,20 +1,30 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
+using Enemy;
 
-namespace Enemy
+public class EnemyAttack : MonoBehaviour, IBulletData
 {
-    public class EnemyAttack : MonoBehaviour
+    public bool PlayerBullet => _playerBullet;
+
+    private bool _playerBullet;
+
+    private float timer;
+    private const int time = 2;
+
+    EnemyCore enemy;
+
+    void Start()
     {
-        // Start is called before the first frame update
-        void Start()
-        {
+        enemy = GetComponent<EnemyCore>();
+        _playerBullet = false;
+    }
 
-        }
-
-        // Update is called once per frame
-        void Update()
+    void Update()
+    {
+        timer += Time.deltaTime;
+        if(timer >= time)
         {
+            timer = 0;
+            Instantiate(enemy.bulletObj, new Vector2(transform.position.x, transform.position.y), Quaternion.identity);
 
         }
     }
