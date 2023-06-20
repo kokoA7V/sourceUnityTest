@@ -6,17 +6,10 @@ namespace Player
 {
     public class PlayerCore : MonoBehaviour
     {
-        // Start is called before the first frame update
-        void Start()
-        {
-
-        }
-
-        // Update is called once per frame
-        void Update()
-        {
-
-        }
+        public int maxHp=3;
+        public int nowHp=3;
+        public float moveSpd=0.5f;
+        public GameObject bullletObj;
     }
 }
 
