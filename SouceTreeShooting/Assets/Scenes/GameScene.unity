@@ -376,9 +376,6 @@ GameObject:
   m_Component:
   - component: {fileID: 1000783951}
   - component: {fileID: 1000783950}
-  - component: {fileID: 1000783952}
-  - component: {fileID: 1000783953}
-  - component: {fileID: 1000783954}
   m_Layer: 0
   m_Name: Player
   m_TagString: Untagged
@@ -452,47 +449,6 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &1000783952
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1000783949}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 39d6c2e4ee37d4747bc5d3a22f478a2a, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
---- !u!114 &1000783953
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1000783949}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 0a602c121d1b9204db096d0ff55c0bbf, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  maxHp: 3
-  nowHp: 3
-  moveSpd: 0.05
-  bullletObj: {fileID: 66129627459639197, guid: 07d717408bce08f439fb77e8dc073432, type: 3}
---- !u!114 &1000783954
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1000783949}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c9156b9e6441a07468a7ff3a6e11a089, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  atkInter: 2
 --- !u!1 &1576173688
 GameObject:
   m_ObjectHideFlags: 0
