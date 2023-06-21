@@ -26,14 +26,25 @@ namespace Player
 
         // Update is called once per frame
         void Update()
-        {
-            rightMuzzle = new Vector2(parent.transform.position.x + 0.4f,
-                    parent.transform.position.y);
-            leftMuzzle = new Vector2(parent.transform.position.x - 0.4f,
-                   parent.transform.position.y);
+        {          
 
             timer += 0.1f;
-            
+            // W–ñ‚µ‚¤‚Â
+            if (Input.GetKey(KeyCode.Space))
+            {
+                rightMuzzle = new Vector2(parent.transform.position.x + 0.1f,
+                    parent.transform.position.y);
+                leftMuzzle = new Vector2(parent.transform.position.x - 0.1f,
+                       parent.transform.position.y);
+            }
+            // L‚­‚¤‚Â
+            else
+            {
+                rightMuzzle = new Vector2(parent.transform.position.x + 0.4f,
+                    parent.transform.position.y);
+                leftMuzzle = new Vector2(parent.transform.position.x - 0.4f,
+                       parent.transform.position.y);
+            }
             if (timer >= atkInter)
             {
                 Instantiate(pCore.bullletObj, rightMuzzle, Quaternion.identity);

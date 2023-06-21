@@ -478,7 +478,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   maxHp: 3
   nowHp: 3
-  moveSpd: 0.1
+  moveSpd: 0.05
   bullletObj: {fileID: 66129627459639197, guid: 07d717408bce08f439fb77e8dc073432, type: 3}
 --- !u!114 &1000783954
 MonoBehaviour:
