@@ -6,17 +6,11 @@ namespace Bullet
 {
     public class BulletCore : MonoBehaviour
     {
-        // Start is called before the first frame update
-        void Start()
-        {
+        public int moveSpd;
 
-        }
+        public int moveInput;
 
-        // Update is called once per frame
-        void Update()
-        {
-
-        }
+        public bool playerBullet;
     }
 }
 

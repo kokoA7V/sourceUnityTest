@@ -6,16 +6,18 @@ namespace Bullet
 {
     public class BulletHit : MonoBehaviour
     {
-        // Start is called before the first frame update
-        void Start()
-        {
+        Rigidbody2D rb;
 
+        private void Start()
+        {
+            rb = GetComponent<Rigidbody2D>();
         }
 
-        // Update is called once per frame
-        void Update()
+        private void OnCollisionEnter(Collision collision)
         {
+            var hit = collision.gameObject.GetComponent<IHitInfo>();
 
+            hit.TakeDamage(1);
         }
     }
 }
