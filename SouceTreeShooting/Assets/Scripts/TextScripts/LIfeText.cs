@@ -1,21 +1,30 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
-namespace Text
+namespace SText
 {
-    public class LIfeText : MonoBehaviour
+    public class LIfeText : MonoBehaviour,IPlayerLife
     {
-        // Start is called before the first frame update
+        public int maxHp { get; set;}
+        public int nowHp { get; set; }
+
+        public Text lifetext;
+
         void Start()
         {
-
+           maxHp= 3;  //âºÇÃHP
         }
 
-        // Update is called once per frame
         void Update()
         {
-
+            if(Input.GetMouseButtonDown(0)) //âºÇÃifï∂èåè
+            {
+                maxHp--;
+                nowHp = maxHp;
+                lifetext.text = nowHp.ToString();
+            }
         }
     }
 }

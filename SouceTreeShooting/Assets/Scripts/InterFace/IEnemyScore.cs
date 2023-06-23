@@ -4,5 +4,5 @@ using UnityEngine;
 
 public interface IEnemyScore
 {
-    
+    public int score { get; set;}
 }
