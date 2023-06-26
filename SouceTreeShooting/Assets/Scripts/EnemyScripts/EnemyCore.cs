@@ -1,17 +1,15 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 
-public class EnemyCore : MonoBehaviour,IUnitDamage,IUnitMove,IUnitShot
+public class EnemyCore : MonoBehaviour, IUnitDamage, IUnitMove, IUnitShot
 {
     public int dmgLayer { get; set; } = 2;
     public int maxHp { get; set; } = 3;
     public int nowHp { get; set; } = 3;
     public int moveSpd { get; set; } = 5;
+    public GameObject bullet { get; set; }
 
     public void HitDmg()
     {
-        //GetComponent<EnemyDamage>().EnHitDmg();
         nowHp--;
     }
     public void Die()
@@ -26,6 +24,6 @@ public class EnemyCore : MonoBehaviour,IUnitDamage,IUnitMove,IUnitShot
 
     public void Shot()
     {
-        //GetComponent<EnemyShot>().
+        GetComponent<EnemyShot>().EnShot(bullet);
     }
 }

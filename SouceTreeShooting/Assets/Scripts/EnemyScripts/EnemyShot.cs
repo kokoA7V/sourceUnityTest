@@ -1,18 +1,13 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 
 public class EnemyShot : MonoBehaviour
 {
-    // Start is called before the first frame update
-    void Start()
+    public void EnShot(GameObject bullet)
     {
-        
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-        
+        Debug.Log("EnemyAttack");
+        if (bullet == null) return; 
+        GameObject _bullet = Instantiate(bullet);
+        _bullet.GetComponent<IUnitAttack>().atkLayer = 2;
+        _bullet.GetComponent<IUnitAttack>().atkpow = 1;
     }
 }
