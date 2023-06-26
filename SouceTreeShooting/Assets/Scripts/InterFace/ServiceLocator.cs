@@ -2,12 +2,12 @@ using System;
 using System.Collections.Generic;
 using UnityEngine;
 
-namespace Sumzap
+namespace GameSystem
 {
     /// <summary>
     /// サービスロケーター
     /// </summary>
-    public static class SystemLocator
+    public static class ServiceLocator
     {
         /// <summary>
         /// 単一インスタンス用ディクショナリー
