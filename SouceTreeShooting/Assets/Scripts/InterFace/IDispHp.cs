@@ -4,6 +4,6 @@ using UnityEngine;
 
 public interface IDispHp
 {
-    int dispHp { get; set; }
+    public  int dispHp { get; set; }
 }
    

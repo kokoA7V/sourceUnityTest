@@ -4,6 +4,6 @@ using UnityEngine;
 
 public interface IUnitAttack 
 {
-    int atkLayer { get; set; }
-    int atkpow { get; set; }
+    public int atkLayer { get; set; }
+    public int atkpow { get; set; }
 }

@@ -4,5 +4,5 @@ using UnityEngine;
 
 public interface IUnitShot 
 {
-    void Shot();
+    public void Shot();
 }
