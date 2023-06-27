@@ -9,6 +9,10 @@ public class EnemyMove : MonoBehaviour
 
     private int moveInput = 1;
 
+    /// <summary>
+    /// ¶‰EˆÚ“®
+    /// </summary>
+    /// <param name="spd"></param>
     public void EnMove(int spd)
     {
         if(rb2d == null) rb2d = GetComponent<Rigidbody2D>();
