@@ -13,7 +13,7 @@ public class PlayerContoroller : MonoBehaviour
     
     void Update()
     {
-        pCore.Move();
+        pCore.Move(pCore.moveSpd);
         pCore.Shot();
     }
     private void OnTriggerEnter2D(Collider2D collision)

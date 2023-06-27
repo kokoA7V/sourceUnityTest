@@ -10,9 +10,9 @@ public class PlayerCore : MonoBehaviour, IUnitDamage,IUnitMove,IUnitShot
     public int nowHp { get; set; } = 3;
 
     public float moveSpd { get; set; } = 0.2f;
-    public void Move()
+    public void Move(float spd)
     {
-        GetComponent<PlayerMove>().PlMove(moveSpd);
+        GetComponent<PlayerMove>().PlMove(spd);
     }
     public void HitDmg() 
     {
