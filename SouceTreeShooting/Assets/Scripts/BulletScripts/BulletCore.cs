@@ -4,12 +4,12 @@ using UnityEngine;
 
 public class BulletCore :MonoBehaviour, IUnitMove, IUnitAttack
 {
-    public int moveSpd { get; set; }
+    public float moveSpd { get; set; }
 
     public int atkpow { get; set; }
     public int atkLayer { get; set; }
 
-    public void Move(int spd)
+    public void Move(float spd)
     {
         if (atkLayer == 1)
         {

@@ -4,6 +4,6 @@ using UnityEngine;
 
 public interface IUnitMove 
 {
-   public int moveSpd { get; set; }
-   public void Move();
+   public float moveSpd { get; set; }
+   public void Move(float spd);
 }
