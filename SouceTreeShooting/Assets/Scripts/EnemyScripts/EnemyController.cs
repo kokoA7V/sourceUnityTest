@@ -6,10 +6,12 @@ public class EnemyController : MonoBehaviour
     private float time = 0;
 
     public int shotTime = 3;
+    public GameObject enBullet;
 
     void Start()
     {
         enemyCore = GetComponent<EnemyCore>();
+        enemyCore.bullet = enBullet;
     }
 
     void Update()
@@ -17,7 +19,7 @@ public class EnemyController : MonoBehaviour
         time += Time.deltaTime;
 
         //ˆÚ“®
-        enemyCore.Move();
+        enemyCore.Move(enemyCore.moveSpd);
 
         //UŒ‚
         if(time >= shotTime)

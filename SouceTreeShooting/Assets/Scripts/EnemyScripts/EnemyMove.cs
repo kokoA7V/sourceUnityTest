@@ -13,7 +13,7 @@ public class EnemyMove : MonoBehaviour
     /// ¶‰EˆÚ“®
     /// </summary>
     /// <param name="spd"></param>
-    public void EnMove(int spd)
+    public void EnMove(float spd)
     {
         if(rb2d == null) rb2d = GetComponent<Rigidbody2D>();
 

@@ -524,7 +524,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   atkInter: 2
-  bullletObj: {fileID: 5330684707217653360, guid: 9d9ea747da593fb439237958d118a63f, type: 3}
+  bullletObj: {fileID: 6719210134399873868, guid: ee45ebc472f50844a8cc5ef4f351a61f, type: 3}
 --- !u!114 &1000783953
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -573,6 +573,51 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ccaa2954a6c08864296819bc531f8cd9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!1 &1556269337
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1556269339}
+  - component: {fileID: 1556269338}
+  m_Layer: 0
+  m_Name: EnemyGene
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &1556269338
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1556269337}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9a2369a496bc2404daf40eeafea91f79, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  enemyObj: {fileID: 2958145449839490442, guid: f2f2b5bd1cc4efb4c911e06dedfca63f, type: 3}
+  createTime: 3
+--- !u!4 &1556269339
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1556269337}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 6
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1576173688
 GameObject:
   m_ObjectHideFlags: 0
@@ -805,8 +850,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9f313ea54cbb69347a6866a0b6143dd0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  nowhp: 3
-  Lifetx: {fileID: 1795378054}
 --- !u!114 &1795378054
 MonoBehaviour:
   m_ObjectHideFlags: 0

@@ -102,7 +102,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e8415ce0e2443974fbde11dad6f170c1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  shotTime: 3
+  shotTime: 2
+  enBullet: {fileID: 6719210134399873868, guid: ee45ebc472f50844a8cc5ef4f351a61f, type: 3}
 --- !u!114 &2958145449839490438
 MonoBehaviour:
   m_ObjectHideFlags: 0

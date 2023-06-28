@@ -5,7 +5,7 @@ public class EnemyCore : MonoBehaviour, IUnitDamage, IUnitMove, IUnitShot
     public int dmgLayer { get; set; } = 2;
     public int maxHp { get; set; } = 3;
     public int nowHp { get; set; } = 3;
-    public int moveSpd { get; set; } = 5;
+    public float moveSpd { get; set; } = 5;
     public GameObject bullet { get; set; }
 
     public void HitDmg()
@@ -17,9 +17,9 @@ public class EnemyCore : MonoBehaviour, IUnitDamage, IUnitMove, IUnitShot
         GetComponent<EnemyDamage>().EnDie();
     }
 
-    public void Move()
+    public void Move(float spd)
     {
-        GetComponent<EnemyMove>().EnMove(moveSpd);
+        GetComponent<EnemyMove>().EnMove(spd);
     }
 
     public void Shot()
