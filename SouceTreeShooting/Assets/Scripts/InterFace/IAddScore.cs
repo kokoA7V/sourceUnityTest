@@ -5,4 +5,5 @@ using UnityEngine;
 public interface IAddScore
 {
     public void AddScore();
+    public int nowscore { get; set; }
 }

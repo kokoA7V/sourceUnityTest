@@ -5,7 +5,7 @@ using UnityEngine.UI;
 
 public class ScoreText : MonoBehaviour, IAddScore
 {
-    int nowscore;
+    public int nowscore { get; set; }
 
     public Text Scoretx;
 
@@ -18,12 +18,14 @@ public class ScoreText : MonoBehaviour, IAddScore
     // Update is called once per frame
     void Update()
     {
+        Debug.Log(nowscore);
         Scoretx.text = nowscore.ToString("d05");
     }
 
     public void AddScore()
     {
-        nowscore += 100;
+        this.nowscore += 100;
+        Debug.Log("add" + nowscore);
     }
 }
 
