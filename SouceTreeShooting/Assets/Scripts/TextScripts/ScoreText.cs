@@ -12,6 +12,7 @@ public class ScoreText : MonoBehaviour, IAddScore
     // Start is called before the first frame update
     void Start()
     {
+        nowscore = 0;
         Scoretx.text = nowscore.ToString("d05");
     }
 

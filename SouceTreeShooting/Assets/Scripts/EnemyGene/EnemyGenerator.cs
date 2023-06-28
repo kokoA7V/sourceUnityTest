@@ -12,7 +12,8 @@ public class EnemyGenerator : MonoBehaviour
     void Start()
     {
         pos = new Vector2(-2.75f, 3.0f);
-        Instantiate(enemyObj, pos, Quaternion.identity);
+        GameObject enemy = Instantiate(enemyObj, pos, Quaternion.identity);
+        enemy.GetComponent<EnemyDamage>().scoreText = score;
     }
 
     void Update()
@@ -24,7 +25,7 @@ public class EnemyGenerator : MonoBehaviour
             Debug.Log("SummonEnemy");
             pos = new Vector2(Random.Range(-6.0f, 0.5f), Random.Range(2f, 4f));
             GameObject enemy = Instantiate(enemyObj, pos, Quaternion.identity);
-            enemy.GetComponent<EnemyDamage>().scoreText = score.gameObject;
+            enemy.GetComponent<EnemyDamage>().scoreText = score;
         }
     }
 }

@@ -2,7 +2,7 @@ using UnityEngine;
 
 public class EnemyDamage : MonoBehaviour
 {
-    public GameObject scoreText;
+    public GameObject scoreText = null;
 
     public void EnDie()
     {
