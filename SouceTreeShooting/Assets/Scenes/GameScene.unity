@@ -604,6 +604,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   enemyObj: {fileID: 2958145449839490442, guid: f2f2b5bd1cc4efb4c911e06dedfca63f, type: 3}
   createTime: 3
+  score: {fileID: 639935928}
 --- !u!4 &1556269339
 Transform:
   m_ObjectHideFlags: 0
