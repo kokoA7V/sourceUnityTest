@@ -13,7 +13,7 @@ public class HpText : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        player.GetComponent<PlayerCore>().nowHp = _nowHp;
-        hpText.text = "Žc‹@  "+_nowHp.ToString();
+        _nowHp = player.GetComponent<PlayerCore>().nowHp;
+        hpText.text = _nowHp.ToString();
     }
 }
