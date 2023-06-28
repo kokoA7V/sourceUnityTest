@@ -5,25 +5,28 @@ using UnityEngine.UI;
 
 public class ScoreText : MonoBehaviour, IAddScore
 {
-    int nowscore;
+    public int nowscore { get; set; }
 
     public Text Scoretx;
 
     // Start is called before the first frame update
     void Start()
     {
+        nowscore = 0;
         Scoretx.text = nowscore.ToString("d05");
     }
 
     // Update is called once per frame
     void Update()
     {
+        Debug.Log(nowscore);
         Scoretx.text = nowscore.ToString("d05");
     }
 
     public void AddScore()
     {
-        nowscore += 100;
+        this.nowscore += 100;
+        Debug.Log("add" + nowscore);
     }
 }
 

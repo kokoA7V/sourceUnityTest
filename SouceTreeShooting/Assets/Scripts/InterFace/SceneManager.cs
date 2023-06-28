@@ -11,6 +11,7 @@ namespace GameSystem
             // Ç†Ç∆Ç≈èëÇ≠ÇÊ
             //ServiceLocator.Register<IDispHp>(new PlayerCore());
             //ServiceLocator.Register<IAddScore>(new ScoreText());
+            //ServiceLocator.Register<IAddScore, ScoreText>();
         }
     }
 }

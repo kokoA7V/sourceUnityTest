@@ -12,7 +12,7 @@ public class BulletController : MonoBehaviour
         bulletCore = GetComponent<BulletCore>();
         rb = GetComponent<Rigidbody2D>();
 
-        bulletCore.moveSpd = 5;
+        bulletCore.moveSpd = 0.5f;
     }
 
     private void Update()
