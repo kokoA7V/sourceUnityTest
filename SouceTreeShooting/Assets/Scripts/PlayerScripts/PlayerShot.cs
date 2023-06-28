@@ -17,6 +17,7 @@ public class PlayerShot : MonoBehaviour
 
     public void PlShot()
     {
+        return;
         parent = this.gameObject;
         timer += 0.1f;
         // W–ñ‚µ‚¤‚Â

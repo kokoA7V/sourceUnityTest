@@ -11,7 +11,7 @@ public class BulletCore :MonoBehaviour, IUnitMove, IUnitAttack
 
     public void Move(float spd)
     {
-        Debug.Log(atkLayer);
+        //Debug.Log(atkLayer);
         if (atkLayer == 1)
         {
             Vector2 pos = transform.position;

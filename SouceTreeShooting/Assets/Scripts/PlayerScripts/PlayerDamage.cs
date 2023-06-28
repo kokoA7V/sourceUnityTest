@@ -7,6 +7,7 @@ public class PlayerDamage : MonoBehaviour
     int nowHP;
     public void PlDmg(int _nowHP)
     {
+        Debug.Log("“–‚½‚Á‚½");
         nowHP = _nowHP;
         nowHP--;
     }

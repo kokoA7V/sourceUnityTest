@@ -19,14 +19,14 @@ public class ScoreText : MonoBehaviour, IAddScore
     // Update is called once per frame
     void Update()
     {
-        Debug.Log(nowscore);
+        //Debug.Log(nowscore);
         Scoretx.text = nowscore.ToString("d05");
     }
 
     public void AddScore()
     {
         this.nowscore += 100;
-        Debug.Log("add" + nowscore);
+        //Debug.Log("add" + nowscore);
     }
 }
 

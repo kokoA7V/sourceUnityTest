@@ -18,6 +18,7 @@ public class PlayerCore : MonoBehaviour, IUnitDamage,IUnitMove,IUnitShot
     public void HitDmg() 
     {
         nowHp--;
+        Debug.Log(nowHp);
     }
     public void Die()
     {

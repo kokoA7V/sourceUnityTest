@@ -6,7 +6,7 @@ public class EnemyDamage : MonoBehaviour
 
     public void EnDie()
     {
-        Debug.Log("EnemyDie");
+        //Debug.Log("EnemyDie");
         if (scoreText.gameObject.TryGetComponent<IAddScore>(out var addScore))
         {
             addScore.AddScore();

@@ -34,7 +34,7 @@ public class EnemyController : MonoBehaviour
         if (collision.gameObject.TryGetComponent<IUnitAttack>(out var unitAttack))
         {
             if (unitAttack.atkLayer != 1) return;
-            Debug.Log("EnemyDamage");
+            //Debug.Log("EnemyDamage");
             enemyCore.HitDmg();
             if (enemyCore.nowHp <= 0) enemyCore.Die();
         }

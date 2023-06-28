@@ -22,7 +22,7 @@ public class EnemyGenerator : MonoBehaviour
         if(time >= createTime)
         {
             time = 0;
-            Debug.Log("SummonEnemy");
+            //Debug.Log("SummonEnemy");
             pos = new Vector2(Random.Range(-6.0f, 0.5f), Random.Range(2f, 4f));
             GameObject enemy = Instantiate(enemyObj, pos, Quaternion.identity);
             enemy.GetComponent<EnemyDamage>().scoreText = score;
